@@ -1,0 +1,112 @@
+.hero-wrap-heading-4{
+  width:100%;
+  height:400px;
+  position:relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index:0;
+}
+.hero-wrap-heading-4 .overlay-heading-4{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  content:"";
+  opacity: .5;
+  background: #222324;
+  height: 400px;
+}
+
+#contact{
+
+
+    width: 100%;
+    display: block;
+    float: left;
+    padding: 50px 0 30px 100px;
+    clear: both; }
+
+    @media screen and (max-width: 768px) {
+    #contact{
+        
+            padding: 5em 0; }
+    } 
+
+    .form-group {
+        margin-bottom: 30px; }
+    .form-group .btn-modify {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 700;
+          font-size: 13px;
+          padding: 10px 15px; }
+
+/* .my-form .form-group .form-field .form-control {
+            padding-right: 50px; }
+.my-form .form-group {
+                margin-bottom: 15px; } */
+
+ /* .form-group .form-field {
+    position: relative;
+    padding: 0;
+    margin: 0; }
+
+
+.form-group .form-field .icon {
+    position: absolute;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        right: 20px;
+                        color: rgba(255, 255, 255, 0.5); }
+                        .form-group .form-field .form-control {
+                            padding-right: 50px; }
+                            .form-group {
+                                margin-bottom: 15px; }
+                                .form-group .form-field {
+                                    position: relative;
+                                    padding: 0;
+                                    margin: 0; }
+
+                                    .sidebar-wrap .my-form-2 .form-group .form-field .icon {
+                                        position: absolute;
+                                        top: 50%;
+                                        -webkit-transform: translateY(-50%);
+                                        -moz-transform: translateY(-50%);
+                                        -ms-transform: translateY(-50%);
+                                        -o-transform: translateY(-50%);
+                                        transform: translateY(-50%);
+                                        right: 20px;
+                                        color: rgba(0, 0, 0, 0.5); }
+                                      .sidebar-wrap .my-form-2 .form-group .form-field .form-control {
+                                        padding-right: 50px; }
+                                  .sidebar-wrap .my-form-2 textarea.form-control {
+                                    height: inherit;
+                                    resize: vertical; } */
+
+.form-control {
+  
+  font-size: 13px !important;
+  font-weight: 300;
+  
+    }
+  
+                                      
+  input[type="text"] {
+  height: 50px; }
+  .contact-info-wrap {
+  margin-bottom: 3em; }
+  .contact-info-wrap p a {
+  color: #000; }
+  .contact-info-wrap p span {
+  padding-right: 10px; }
+  .contact-info-wrap p span i {
+  font-size: 20px;
+  color: #000; }
+
+

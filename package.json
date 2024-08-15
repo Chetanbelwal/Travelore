@@ -1,0 +1,28 @@
+{
+  "name": "travelore-backend",
+  "version": "1.0.0",
+  "description": "This is a website created by me where user have to sign up and sign in and he can then select his desired package and can fill the booking form online all the data will be stored in database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js -e js,hbs"
+  },
+  "keywords": [],
+  "author": "chetan belwal",
+  "license": "ISC",
+  "dependencies": {
+    "@admin-bro/express": "^3.1.0",
+    "@admin-bro/mongoose": "^1.1.0",
+    "admin-bro": "^4.0.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "mongoose-validator": "^2.1.0",
+    "sweetalert": "^2.1.2",
+    "validator": "^13.6.0"
+  }
+}

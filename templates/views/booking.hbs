@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   {{>header}}
+    <!-- Css files -->
+    
+    <link rel="stylesheet" href="css/booking.css">
+    <title>Tours | Booking</title>
+</head>
+
+<body>
+
+   {{>navbar2}}
+
+
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-md-push-5">
+						<div class="booking-cta">
+							<h1 class=" animate__animated animate__fadeInDownBig animate__delay-0s">Make your reservation</h1>
+							<p  class="animate__animated animate__fadeInRightBig animate__delay-0s">Hurry Up! Until its too late <br>Limited seats Available, TraveLore offers a hassle-free holiday wherein all your travel needs
+                        are taken care of. Be it your accommodation in comfortable hotels, convenient transfers, varied
+                        sightseeing options and an array of activities to choose from, delectable meals and niche
+                        experiences - the holiday packages are designed such to offer you an unparalleled experience.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-5 col-md-pull-7">
+						<div class="booking-form">
+							<form action="\bookingform" method="POST" >
+								<div class="form-group">
+									<span class="form-label">Name</span>
+									<input class="form-control" type="text" placeholder="Enter your name" name="name">
+								</div>
+								<div class="form-group">
+									<span class="form-label">Email</span>
+									<input class="form-control" type="text" placeholder="Enter your email" name="email">
+								</div>
+								<div class="row">
+									<div class="col-sm-8">
+										<div class="form-group">
+											<span class="form-label">Contact</span>
+											<input class="form-control" type="text" placeholder="contact number" name="contact">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<span class="form-label">Age</span>
+											<input class="form-control" type="text" placeholder="Enter your Age" name="age">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<span class="form-label">Your Destination</span>
+									<select class="form-control" name="package">
+										<option value="" disabled selected hidden style="color:rgba(62, 72, 92, 0.3);">Available Packages</option>
+										<option value="Agumbe">Agumbe</option>
+										<option value="Auli">Auli</option>
+										<option value="Bhutan">Bhutan</option>
+										<option value="Dubai">Dubai</option>
+										<option value="Gokarna">Gokarna</option>
+										<option value="Kerela">Kerela</option>
+										<option value="Ladakh">Ladakh</option>
+										<option value="Srilanka">Srilanka</option>
+										<option value="South India">South India</option>
+										<option value="Russia">Russia</option>
+										<option value="Rann Of Kutch">Rann Of Kutch</option>
+										<option value="Pune">Pune</option>
+										<option value="Pawna Lake">Pawna Lake</option>
+										<option value="Maldives">Maldives</option>
+										<option value="Leh">Leh</option>
+									</select>
+									<span class="select-arrow"></span>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<span class="form-label">Check In</span>
+											<input class="form-control" type="date" required name="checkIn">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<span class="form-label">Check out</span>
+											<input class="form-control" type="date" required name="checkOut">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="form-group">
+											<span class="form-label">Rooms</span>
+											<select class="form-control" name="rooms">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<span class="form-label">Adults</span>
+											<input type="number" name="adults" class="form-control" placeholder="No of Adults">
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="form-group">
+											<span class="form-label">Children</span>
+											
+												<input type="number" name="children" class="form-control" placeholder="No of Children">
+											
+										</div>
+									</div>
+								</div>
+								<div class="form-btn">
+									<button class="submit-btn" type="submit">Book Now</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

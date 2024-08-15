@@ -1,0 +1,30 @@
+
+h2 {
+    padding: 0px 0px 20px 0px;
+    font-size: 45px;
+    width: auto;
+    font-weight: bold;
+    /* margin-top: 60px; */
+    margin: 0px auto;
+    /* text-align: center; */
+    color: #0e0f10;
+    line-height: 50px;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    margin-top: 50px;
+}
+body {
+background-color: rgb(253, 221, 221);
+}
+
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 50%;
+   
+  }

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <!-- Css files -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/About.css">
+    <link rel="stylesheet" href="css/Blogs.css">
+    <link rel="stylesheet" href="css/ContactUs.css">
+    <link rel="stylesheet" href="css/Tour.css">
+    <title>TraveLore | Tours</title>
+</head>
+
+<body>
+
+    {{>navbar2}}
+
+
+    <!-----------------------------------Entry Tour screen  ----------------------------------->
+    <section class="hero-wrap-heading-2 animate__animated animate__fadeIn"
+        style="background-image:url('images/Banner/banner\ Tour.jpg');">
+        <div class="overlay-heading-2"></div>
+        {{#if active}}
+        <div class="alert alert-{{type}}">
+            <strong>{{heading}}</strong> {{message}}
+            <button type="button" class="btn-close alert-close" data-bs-dismiss="alert" aria-label="Close">❌</button>
+        </div>
+
+        {{/if}}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2 class="animate__animated animate__fadeInDownBig animate__delay-0s" style="color: white;">Our
+                            Packages</h2>
+                        <span class="animate__animated animate__fadeInRightBig animate__delay-0s"
+                            style="color: white;">We Assist you to choose the best package for you</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!---------------------------Entry Tour screen END HERE ---------------------------------->
+
+
+    <!-- --------------------------------------Special packages --------------------------------------- -->
+    <section id="pack" class="packages" data-aos="fade-in">
+        <div class="container">
+            <div class="row">
+                <div class="packages-content">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/Agumbe.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Agumbe <span class="pull-right">$1999</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 5 days 6 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 5 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>2544 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/auli.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Auli <span class="pull-right">$1499</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 7 days 8 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 5 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>2657 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/bhutan.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Bhutan <span class="pull-right">$1299</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 3 days 4 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 4 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>544 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/Dubai.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Dubai <span class="pull-right">$2499</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 9 days 7 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 5 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> Hotair baloon
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>9544 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn" >
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6"  data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/gokarna.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Gokarna <span class="pull-right">$999</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 5 days 6 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 4 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> sea food
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-al"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>254 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/kerala.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Kerela <span class="pull-right">$299</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 5 days 6 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 3 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> South food
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>641 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/ladakh.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Ladakh <span class="pull-right">$799</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 9 days 8 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 5 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>2544 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/srilanka.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Srilanka <span class="pull-right">$1199</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 5 days 6 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 4 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>987 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" >
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/southindia.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>South India <span class="pull-right">$499</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 5 days 6 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 5 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>2234 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/Russia.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Russia <span class="pull-right">$1999</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 10 days 9 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 5 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <span>7437 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/rann_of_kutch.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Rann Of Kutch <span class="pull-right">$464</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 6 daays 5 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 5 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <span>899 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img data-aos="zoom-in"  src="images/Tours/pune.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Pune <span class="pull-right">$499</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 5 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>344 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/pawnalake.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Pawna Lake <span class="pull-right">$799</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 5 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-al"></i>
+                                            <span>3622 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/Maldives.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Maldives <span class="pull-right">$699</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 5 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>756 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <div class="single-package-item">
+                                <img  data-aos="zoom-in" src="images/Tours/leh.jpg" alt="package-place">
+                                <div class="single-package-item-txt">
+                                    <h3>Leh <span class="pull-right">$499</span></h3>
+                                    <div class="packages-para">
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> 5 daays 6 nights
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> 3 star accomodation
+                                        </p>
+                                        <p>
+                                            <span>
+                                                <i class="fa fa-angle-right"></i> transportation
+                                            </span>
+                                            <i class="fa fa-angle-right"></i> food facilities
+                                        </p>
+                                    </div>
+                                    <div class="packages-review">
+                                        <p>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-al"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>44 review</span>
+                                        </p>
+                                    </div>
+                                    <div class="about-btn">
+                                        <a href="/booking" class="about-view packages-btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+    </section>
+
+    <!-- --------------------------------------Packages END HERE--------------------------------------- -->
+
+
+    {{>footer}}
+
+     {{>scripts}}
+</body>
+
+</html>

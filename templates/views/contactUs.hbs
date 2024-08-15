@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <!-- Css files -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/About.css">
+    <link rel="stylesheet" href="css/Blogs.css">
+    <link rel="stylesheet" href="css/ContactUs.css">
+    <link rel="stylesheet" href="css/Tour.css">
+    <title>TraveLore | Contact Us</title>
+</head>
+
+<body>
+
+    {{>navbar2}}
+
+
+    <!-----------------------------------Entry ContactUs screen  ----------------------------------->
+
+
+    <section class="hero-wrap-heading-4 animate__animated animate__fadeIn"
+        style="background-image:url('images/Banner/banner\ contactus.jpg');">
+        <div class="overlay-heading-4"></div>
+        {{#if active}}
+        <div class="alert alert-{{type}}">
+            <strong>{{heading}}</strong> {{message}}
+            <button type="button" class="btn-close alert-close" data-bs-dismiss="alert" aria-label="Close">❌</button>
+        </div>
+
+        {{/if}}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2 class="animate__animated animate__fadeInDownBig animate__delay-0s" style="color: white;">Get
+                            In Touch</h2>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!---------------------------Entry Contact US END HERE ---------------------------------->
+
+
+    <!-- ----------------------------ContactUs form------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row" data-aos="fade-in">
+
+                <div class="col-md-10 col-md-offset-1 " data-aos="fade-up">
+
+                    <form action="/contactus" method="POST" class="animate__animated animate__fadeInUp ">
+                        <div class="row form-group">
+                            <div class="col-md-6 padding-bottom">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" class="form-control" placeholder="Your firstname"
+                                    name="firstName">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" class="form-control" placeholder="Your lastname"
+                                    name="lastName">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" class="form-control" placeholder="Your email address"
+                                    name="email">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" class="form-control"
+                                    placeholder="Your subject of this message" name="subject">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10" class="form-control"
+                                    placeholder="Say something about us" name="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-md-10 col-md-offset-1" data-aos="fade-up">
+                    <h3>Contact Information</h3>
+                    <div class="row contact-info-wrap">
+                        <div class="col-md-3">
+                            <p><span><i class="fa fa-home"></i></span> Amrapali group of institutes, <br> Lamachor, Haldwani
+                                10016</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p><span><i class="fa fa-phone-square"></i></span> <a href="tel://1234567920">+ 1235 2355
+                                    98</a></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p><span><i class="fa fa-envelope"></i></span> <a
+                                    href="#">Travelore@gmail.com</a></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p><span><i class="fas fa-globe"></i></span> <a href="#">Travelore.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container-fluid" data-aos="fade-in">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3481.885556690547!2d79.41793071643951!3d29.226920582187308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09d06d829fc01%3A0xfb18770875225c2c!2sAmrapali%20Group%20Of%20Institutes!5e0!3m2!1sen!2sin!4v1624699216461!5m2!1sen!2sin"
+                width=100% height=400px style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <!-- ----------------------------ContactUs form  End here------------------------------- -->
+
+
+
+    <!-- --------------------------------------------Newsletter ------------------------------------------>
+    <!-- --------------------------------------------Newsletter END HERE ------------------------------------------>
+
+    {{>footer}}
+    {{>scripts}}
+</body>
+
+</html>

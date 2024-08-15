@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+   <link rel="stylesheet" href="css/home.css">
+    <title>TraveLore | Admin</title>
+</head>
+
+<body>
+
+   {{>adminnav}}
+    <!-- --------------------------------Navbar END HERE-------------------------------------->
+
+
+    <!-----------------------------------Entry home screen  ----------------------------------->
+    <section class="hero-wrap animate__animated animate__fadeIn" style="background-image:url('images/Banner/Home1.jpg');">
+        <div class="overlay"></div>
+         {{#if active}}
+        <div class="alert alert-{{type}}">
+            <strong>{{heading}}</strong> {{message}}
+            <button type="button" class="btn-close alert-close" data-bs-dismiss="alert" aria-label="Close">❌</button>
+            
+        </div>
+
+        {{/if}}
+        <div class="container">
+            <div class="row no-gutters main-text align-items-center">
+                <div class="col-lg-7 col-md-6 d-flex align-items-end">
+                    <div class="text">
+                        <h1 class="mb-4 text-capitalize animate__animated animate__backInDown animate__delay-0.4s animate__slower ">
+                            Welcome Back Admin
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      {{>scripts}}
+
+</body>
+
+</html>

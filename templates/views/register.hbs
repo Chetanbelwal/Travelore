@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--font-family-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    {{!-- link stylesheet --}}
+    <link rel="stylesheet" href="css/register.css">
+    <title>Log-in | Sign-Up</title>
+</head>
+<body>
+<div class="hero animate__animated animate__fadeIn">
+    {{#if active}}
+<div class="alert alert-{{type}}">
+    <strong>{{heading}}</strong> {{message}}
+    <button type="button" class="btn-close alert-close" data-bs-dismiss="alert" aria-label="Close">❌</button>
+</div>
+
+{{/if}}
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <form action="/login" method="POST" id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="Email Id Required" name="email">
+            <input type="password" class="input-field" placeholder="Enter Password" name="password">
+            <input type="checkbox" class="checkbox"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form action="/register" method="POST" id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id Required" name="userId">
+            <input type="email" class="input-field" placeholder="Email Id Required" name="email">
+            <input type="password" class="input-field" placeholder="Enter Password" name="password">
+            <input type="password" class="input-field" placeholder="Confirm Password" name="confirmPassword">
+            <input type="checkbox" class="checkbox"><span>I agree to the <a>Terms & Conditions</a></span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+    }
+</script>
+    {{>scripts}}
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+   <link rel="stylesheet" href="css/home.css">
+   <link rel="stylesheet" href="css/table.css">
+    <title>TraveLore |{{title}}</title>
+   
+</head>
+
+<body>
+
+   {{>adminnav}}
+    <!-- --------------------------------Navbar END HERE-------------------------------------->
+ 
+<!--====form section start====-->
+<div class="container mt-5">
+
+<h1 class="table-heading mb-5">{{title}}</h1>
+
+    <table class="table table-hover table-bordered table-responsive-xl">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">UserId</th>
+      <th scope="col">Email</th>
+      <th scope="col">Password</th>
+      <th scope="col">Date</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+     {{#each records}}
+    <tr>
+        <td>{{userId}}</td>
+        <td>{{email}}</td>
+        <td>{{password}}</td>
+        <td>{{Date}}</td>
+
+        
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+ {{>scripts}}
+
+</body>
+
+</html>
