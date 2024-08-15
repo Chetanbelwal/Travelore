@@ -9,7 +9,7 @@ const auth = async (req, res, next) => {
         }
 
         // Use environment variable for the secret key
-        const verifyUser = jwt.verify(token, "mynameischetanbelwalfromamrapaliinstitute");
+        const verifyUser = jwt.verify(token, process.env.SECRET_KEY);
         
         // Find user by ID
         const user = await Register.findOne({ _id: verifyUser._id });

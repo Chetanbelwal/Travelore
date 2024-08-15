@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const URI = "mongodb+srv://chetanbelwal13:UVN4JEVL9zCmpDoR@cluster0.ccaum.mongodb.net/Travelore?retryWrites=true&w=majority&appName=Cluster0";
+const URI = process.env.MONGODB_URI;
 
 const connectToDb = async () => {
   try {
