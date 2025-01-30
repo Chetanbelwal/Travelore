@@ -26,6 +26,15 @@ Fullstack
 ## Deployed App
 https://travelore.onrender.com
 
+## Credentials
+User
+username - travelore@gmail.com
+password - travelore
+
+Admin
+username - admin@admin.com
+password - admin@admin.com
+
 ## Directory Structure
 ```
 Travelore/
